@@ -1,0 +1,31 @@
+{
+    "expo": {
+        "name": "EAC App",
+        "slug": "EAC App",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/favicon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/favicon.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#eeeeee"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/favicon.png",
+                "backgroundColor": "#eeeeee"
+            }
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        }
+    }
+}
