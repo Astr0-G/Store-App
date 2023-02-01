@@ -2,6 +2,7 @@ import { Flex, ScrollView, Image, Text, Box, Pressable, Heading } from "native-b
 import React from "react"
 import Colors from "../colors"
 import products from "../data/products"
+import Rating from "./Rating"
 function HomeProducts() {
     return (
         <ScrollView flex={1}>
@@ -28,9 +29,13 @@ function HomeProducts() {
                         />
                         <Box px={4} pt={1}>
                             <Heading size="sm" bold>
-                                {product.price}
+                                ${product.price}
                             </Heading>
+                            <Text fontSize={10} mt={1} isTruncated w="full">
+                                {product.name}
+                            </Text>
                         </Box>
+                        <Rating />
                     </Pressable>
                 ))}
             </Flex>
