@@ -13,7 +13,7 @@ function NotVerifyScreen() {
                     REGISTER
                 </Buttonone>
                 <Buttonone bg={Colors.white} color={Colors.black}>
-                    REGISTER
+                    LOGIN
                 </Buttonone>
             </VStack>
         </Box>

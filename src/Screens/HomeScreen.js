@@ -1,11 +1,12 @@
-import { Text, View } from "native-base"
+import { Text, Box } from "native-base"
 import React from "react"
+import Colors from "../colors"
 
 function HomeScreen() {
     return (
-        <View>
+        <Box flex={1} bg={Colors.black}>
             <Text>HomeScreen</Text>
-        </View>
+        </Box>
     )
 }
 
