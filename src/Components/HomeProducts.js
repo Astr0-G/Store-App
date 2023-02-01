@@ -5,7 +5,7 @@ import products from "../data/products"
 import Rating from "./Rating"
 function HomeProducts() {
     return (
-        <ScrollView flex={1}>
+        <ScrollView flex={1} showsVerticalScrollIndicator={false}>
             <Flex flexWrap="wrap" direction="row" justifyContent="space-between" px={6}>
                 {products.map((product) => (
                     // <Text>{product.name}</Text>
