@@ -32,6 +32,11 @@ function Rating({ value, text }) {
                 color={color}
                 size={size}
             />
+            {text && (
+                <Text fontSize={12} ml={2}>
+                    {text}
+                </Text>
+            )}
         </HStack>
     )
 }

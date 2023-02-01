@@ -35,7 +35,7 @@ function HomeProducts() {
                                 {product.name}
                             </Text>
                         </Box>
-                        <Rating />
+                        <Rating value={product.rating} />
                     </Pressable>
                 ))}
             </Flex>
