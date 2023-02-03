@@ -13,7 +13,9 @@ function SingleProductPage() {
                     h={300}
                     resizeMode="contain"
                 />
-                <Heading> New Adidas shoe</Heading>
+                <Heading bold fontSize={15}>
+                    New Adidas shoe
+                </Heading>
             </ScrollView>
         </Box>
     )
