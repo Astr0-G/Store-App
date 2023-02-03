@@ -4,7 +4,7 @@ import Colors from "../colors"
 import Message from "./Notifications/Message"
 import Rating from "./Rating"
 
-function Review({ mt, bg, color, children, onPress }) {
+function Review() {
     return (
         <Box my={9}>
             <Heading bold fontSize={15} mb={2}>
@@ -18,7 +18,14 @@ function Review({ mt, bg, color, children, onPress }) {
                 </Heading>
                 <Rating value={4} />
                 <Text mb={3}>Jan 12 2023</Text>
-                <Message />
+                <Message
+                    color={Colors.black}
+                    bg={Colors.white}
+                    size={12}
+                    children={
+                        "awjhdssergsdfgbsdfgbesrbysrdtbsertbsegfjhasdgfjasdfvasdjvfhsagvfjsahdgvfsh"
+                    }
+                />
             </Box>
         </Box>
     )
