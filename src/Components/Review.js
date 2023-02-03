@@ -1,4 +1,4 @@
-import { Box, CheckIcon, FormControl, Heading, Text, VStack, Select } from "native-base"
+import { Box, CheckIcon, FormControl, Heading, Text, VStack, Select, TextArea } from "native-base"
 import React, { useState } from "react"
 import Colors from "../colors"
 import Message from "./Notifications/Message"
@@ -60,6 +60,19 @@ function Review() {
                             <Select.Item label="Fair" value="2" />
                             <Select.Item label="Good" value="3" />
                         </Select>
+                    </FormControl>
+                    <FormControl>
+                        <FormControl.Label _text={{ fontSize: "12px", fontWeight: "bold" }}>
+                            Comment
+                        </FormControl.Label>
+                        <TextArea
+                            h={24}
+                            w="full"
+                            placeholder="This product is good ..."
+                            borderWidth={0}
+                            bg={Colors.palegreen}
+                            py={4}
+                        />
                     </FormControl>
                 </VStack>
             </Box>
