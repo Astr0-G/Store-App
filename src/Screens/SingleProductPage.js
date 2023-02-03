@@ -4,7 +4,7 @@ import Colors from "../colors"
 import Rating from "../Components/Rating"
 import NumericInput from "react-native-numeric-input"
 import Buttonone from "../Components/Buttonone"
-
+import Review from "../Components/Review"
 function SingleProductPage() {
     const [value, setValue] = useState(0)
     return (
@@ -48,6 +48,7 @@ function SingleProductPage() {
                 <Buttonone bg={Colors.darkred} color={Colors.white} mt={10}>
                     Add to Cart
                 </Buttonone>
+                <Review />
             </ScrollView>
         </Box>
     )
