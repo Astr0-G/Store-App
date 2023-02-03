@@ -22,9 +22,7 @@ function Review() {
                     color={Colors.black}
                     bg={Colors.white}
                     size={12}
-                    children={
-                        "awjhdssergsdfgbsdfgbesrbysrdtbsertbsegfjhasdgfjasdfvasdjvfhsagvfjsahdgvfsh"
-                    }
+                    children={"This is so useful! Recommend!!!!"}
                 />
             </Box>
         </Box>
