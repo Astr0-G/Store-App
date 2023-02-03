@@ -1,6 +1,7 @@
 import { Box, CheckIcon, FormControl, Heading, Text, VStack, Select, TextArea } from "native-base"
 import React, { useState } from "react"
 import Colors from "../colors"
+import Buttonone from "./Buttonone"
 import Message from "./Notifications/Message"
 import Rating from "./Rating"
 
@@ -74,6 +75,9 @@ function Review() {
                             py={4}
                         />
                     </FormControl>
+                    <Buttonone bg={Colors.darkred} color={Colors.white}>
+                        SUBMIT
+                    </Buttonone>
                 </VStack>
             </Box>
         </Box>
