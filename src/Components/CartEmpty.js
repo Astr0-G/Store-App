@@ -6,7 +6,7 @@ import Buttonone from "./Buttonone"
 
 const CartEmpty = () => {
     return (
-        <Box flex={1}>
+        <Box flex={1} px={4}>
             <Center h="90%">
                 <Center w={200} h={200} bg={Colors.white} rounded="full">
                     <FontAwesome name="shopping-basket" size={64} color={Colors.main} />

@@ -1,7 +1,8 @@
-import { Text, Box, Center } from "native-base"
+import { Text, Box, Center, ScrollView } from "native-base"
 import CartEmpty from "../Components/CartEmpty"
 import React from "react"
 import Colors from "../colors"
+import Cartitems from "../Components/Cartitems"
 
 function CartScreen() {
     return (
@@ -13,7 +14,11 @@ function CartScreen() {
                 </Text>
             </Center>
             {/* IF CART IS EMPTY */}
-            <CartEmpty />
+            {/* <CartEmpty /> */}
+            {/* CART ITEMS */}
+            <ScrollView showsVerticalScrollIndicator={false}>
+                <Cartitems />
+            </ScrollView>
         </Box>
     )
 }
