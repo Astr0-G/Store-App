@@ -73,11 +73,18 @@ function Review() {
                             borderWidth={0}
                             bg={Colors.palegreen}
                             py={4}
+                            _focus={{ bg: Colors.palegreen }}
                         />
                     </FormControl>
                     <Buttonone bg={Colors.darkred} color={Colors.white}>
                         SUBMIT
                     </Buttonone>
+                    {/* IF NOT LOGIN */}
+                    <Message
+                        color={Colors.white}
+                        bg={Colors.black}
+                        children={"Please 'LOGIN' to review this product"}
+                    />
                 </VStack>
             </Box>
         </Box>
