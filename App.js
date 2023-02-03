@@ -1,10 +1,10 @@
 import { StatusBar } from "expo-status-bar"
-import SingleProductPage from "./src/Screens/SingleProductPage"
+import CartScreen from "./src/Screens/CartScreen"
 import { NativeBaseProvider, Box, Text } from "native-base"
 export default function App() {
     return (
         <NativeBaseProvider>
-            <SingleProductPage />
+            <CartScreen />
         </NativeBaseProvider>
     )
     // return
