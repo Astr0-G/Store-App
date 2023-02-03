@@ -7,7 +7,7 @@ const products = [
         rating: "1.5",
         price: "345",
         numReviews: "0",
-        countInStock: "1",
+        countInStock: "2",
         commentsNumber: "0",
     },
     {
