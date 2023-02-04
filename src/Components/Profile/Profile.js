@@ -1,11 +1,32 @@
-import { View, Text } from "react-native"
 import React from "react"
+import Colors from "../../colors"
+import { View, Text, Box, ScrollView, VStack, Input, FormControl } from "native-base"
 
 const Profile = () => {
     return (
-        <View>
-            <Text>Profile</Text>
-        </View>
+        <Box h="full" bg={Colors.white} px={5}>
+            <ScrollView showsVerticalScrollIndicator={false}>
+                <VStack space={10} mt={5} pb={10}>
+                    <FormControl>
+                        <FormControl.Label
+                            _text={{
+                                fontSize: "12px",
+                                fontweight: "bold",
+                            }}
+                        >
+                            USERNAME
+                        </FormControl.Label>
+                        <Input
+                            borderWidth={0}
+                            bg={Colors.palegreen}
+                            py={3}
+                            color={Colors.main}
+                            fontSize={20}
+                        />
+                    </FormControl>
+                </VStack>
+            </ScrollView>
+        </Box>
     )
 }
 
