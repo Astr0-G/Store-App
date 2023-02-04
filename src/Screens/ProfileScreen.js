@@ -1,6 +1,7 @@
 import { Text, Center, Image, Heading } from "native-base"
 import React from "react"
 import Colors from "../colors"
+import Tabs from "../Components/Profile/Tabs"
 
 function ProfileScreen() {
     return (
@@ -20,6 +21,8 @@ function ProfileScreen() {
                     Joined Dec 12 2022
                 </Text>
             </Center>
+            {/* TABS */}
+            <Tabs />
         </>
     )
 }
