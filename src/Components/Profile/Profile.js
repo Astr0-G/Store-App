@@ -1,6 +1,6 @@
 import React from "react"
 import Colors from "../../colors"
-import { View, Text, Box, ScrollView, VStack, Input, FormControl } from "native-base"
+import { Box, ScrollView, VStack, Input, FormControl } from "native-base"
 
 const Profile = () => {
     return (
