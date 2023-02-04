@@ -1,7 +1,7 @@
 import React from "react"
 import { SwipeListView } from "react-native-swipe-list-view"
 import products from "../data/products"
-import { Box, Pressable, Text, Center, HStack, VStack, Image } from "native-base"
+import { Box, Pressable, Text, Center, HStack, VStack, Image, Button } from "native-base"
 import Colors from "../colors"
 import { FontAwesome } from "@expo/vector-icons"
 
@@ -36,14 +36,23 @@ const renderItems = (data, rowMap) => (
                         h={24}
                         resizeMode="contain"
                     />
-                    <VStack w="60%" px={2} space={2}>
-                        <Text isTruncated color={Colors.black} bold fontSize={14}>
-                            {data.item.name}
-                        </Text>
-                        <Text bold color={Colors.black}>
-                            ${data.item.price}
-                        </Text>
-                    </VStack>
+                </Center>
+                <VStack w="60%" px={2} space={2}>
+                    <Text isTruncated color={Colors.black} bold fontSize={10}>
+                        {data.item.name}
+                    </Text>
+                    <Text bold color={Colors.black}>
+                        ${data.item.price}
+                    </Text>
+                </VStack>
+                <Center>
+                    <Button
+                        bg={Colors.main}
+                        _pressed={{ bg: Colors.black }}
+                        _text={{ color: Colors.white }}
+                    >
+                        5
+                    </Button>
                 </Center>
             </HStack>
         </Box>
