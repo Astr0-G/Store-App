@@ -1,4 +1,4 @@
-import { Text, Box } from "native-base"
+import { Box } from "native-base"
 import React from "react"
 import Colors from "../colors"
 import HomeProducts from "../Components/HomeProducts"
